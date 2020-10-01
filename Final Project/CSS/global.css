@@ -1,0 +1,112 @@
+html, body {
+    width: 1000px;
+    align-content: center;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    width: 200px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+header {
+    background-color: #ffffff;
+}
+nav {
+    float: right; 
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-left: 55px;
+    padding-top: 25px;
+    position: relative;
+}
+nav a {
+    color: #3d3d3b;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav a:hover {
+    color: #8f8f8f;
+}
+nav a::before {
+    content:"";
+    display: block;
+    height: 5px;
+    background-color: #3d3d3b;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before{
+    width: 100%;
+}
+.active::before{
+    width: 100%;
+}
+footer {
+    display: block;
+    display: block;
+    grid-column-gap: 50px;
+    background-color: #ccc;
+    height: 250px;
+    color: #757575;
+    clear: both;
+}
+footer a {
+    color: #757575;
+    text-decoration: none;
+}
+footer ul{
+    list-style: none;
+}
+.section1 {
+    float: left;
+    width: 33.33333333%;
+}
+
+.section2 {
+    float: left;
+    width: 33.3333333%;
+}
+
+.section3 {
+    float: left;
+    width: 33.333333%;
+}
+footer .titlefoot {
+    font-size: 1.1em;
+    font-weight: 900;
+    padding-bottom: 10px;
+    color: #000;
+    
+}
+footer a:hover{
+    color: #ffffff;
+}
+
+.copyright {
+    clear: both;
+    text-align: right;
+    margin-right: 50px;
+    font-size: .75em;
+}
